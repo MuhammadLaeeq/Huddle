@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body{   
+background-repeat: no-repeat;
+background-size: contain;
+background-color: hsl(257, 40%, 49% );
+background-image: url('./images/bg-desktop.svg');
+font-family: 'Poppins', sans-serif;
+}
+main{
+    height:100vh;
+    margin-top:-18px;
+}
+.container{
+    max-width:1200px;
+    margin:40px auto;
+    
+}
+.logo{
+    margin:30px 75px;
+}
+.box{
+    display:flex;
+    justify-content: center;
+}
+.box img{
+    width:50%;
+    height:50%;
+}
+.social-links{
+    margin-top:-30px;
+    margin-right:70px;
+}
+.social-links ul{
+display:flex;
+justify-content: flex-end;
+align-items: center;
+
+}
+.social-links ul li{
+    margin-right:20px;
+    list-style: none;
+    color:#fff;
+
+}
+.social-links ul li i{
+    border:1px solid #fff;
+    width:20px;
+    height:20px;
+    font-size:20px;
+    text-align: center;
+    padding:10px 10px;
+    border-radius:50px;
+
+}
+.social-links ul li i:hover{
+    border:1px solid hsl(300, 69%, 71%);
+    color:hsl(300, 69%, 71%);
+   cursor: pointer;    
+
+}
+.info{
+    margin:0 50px;
+}
+.info h3{
+    font-weight:600;
+    font-size:45px;
+    color:#fff;
+}
+.info p{
+ color:rgba(255, 255, 255, 0.89);
+ margin-top: -30px;
+}
+button{
+    width:170px;
+    border-radius:30px;
+    border:none;
+    height:50px;
+    color:#fff;
+    background-color:hsl(300, 69%, 71%);
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.603);
+}
+button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px){
+     main{
+         text-align: center;
+     }
+    body{   
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: hsl(257, 40%, 49% );
+        background-image: url('./images/bg-mobile.svg');
+        font-family: 'Poppins', sans-serif;
+        background-position: center top;
+        }
+        .logo{
+            margin-left:-100px;
+            width:150px;
+        }
+    .box {
+         display:flex;
+         flex-wrap: wrap;
+     }
+    .box img{
+        width:90%;
+        height:90%;
+    }
+    .container{
+        width:100%;
+     }
+     
+     .info h3{
+        font-weight:400;
+        font-size:20;
+        color:#fff;
+    }
+    .info p{
+     color:rgba(255, 255, 255, 0.89);
+     margin-top: -30px;
+     text-align: center;
+    }
+    button{
+        width:170px;
+        margin-top:20px;
+        border-radius:30px;
+        border:none;
+        height:50px;
+        color:#fff;
+        background-color:hsl(300, 69%, 71%);
+        box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.603);
+    }
+    .social-links ul li i{
+      margin-top:40px; 
+    }
+}
